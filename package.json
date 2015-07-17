@@ -1,0 +1,16 @@
+{
+  "name": "io.pinf.service.twilio",
+  "version": "0.1.0",
+  "config": {
+    "org.pinf.genesis.lib/0": {
+      "api": {
+        "provides": {
+          "send": "./api/send.js"
+        },
+        "consumes": {
+          "config": "org.pinf.genesis.lib/0/config"
+        }
+      }
+    }
+  }
+}
