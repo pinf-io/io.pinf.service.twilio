@@ -1,6 +1,11 @@
 {
   "name": "io.pinf.service.twilio",
   "version": "0.1.0",
+  "dependencies": {
+    "deepmerge": "^0.2.10",
+    "q": "^1.4.1",
+    "twilio": "^2.2.1"
+  },
   "config": {
     "org.pinf.genesis.lib/0": {
       "api": {
@@ -8,7 +13,11 @@
           "send": "./api/send.js"
         },
         "consumes": {
-          "config": "org.pinf.genesis.lib/0/config"
+          "config": "org.pinf.genesis.lib/0/config",
+          "Q": "q",
+          "ASSERT": "assert",
+          "DEEPMERGE": "deepmerge",
+          "TWILIO": "twilio"
         }
       }
     }
